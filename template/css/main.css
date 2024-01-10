@@ -1124,6 +1124,10 @@ hr {
     transition: all .15s ease-in-out
 }
 
+.ion-logo-html5,.ion-logo-css3{
+    margin-right: 10px;
+}
+
 .services-section .single-service .service-icon {
     display: inline-block;
     font-size: 58px;
