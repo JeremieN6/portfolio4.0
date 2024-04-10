@@ -60,8 +60,8 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link" href="#about">A Propos</a></li>
         <li class="nav-item"><a class="nav-link" href="#resume">Curriculum vitae</a></li>
-        <!-- <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li> -->
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -632,59 +632,96 @@
               <!-- Thumbnail list-->
               <div class="portfolio-grid row">
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design"><a class="portfolio-item" href="template/img/item-1.jpg"
-                    data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="template/img/item-1.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Label Tag Mockup</h6><span class="content-more">More Info</span>
-                      </div>
+                <div class="single-item col-6 col-lg-4 brand">
+                  <a href="#modal1" data-toggle="modal" data-target="#exampleModal">
+                    <img src="template/img/item-1.jpg" class="img-fluid">
+                  </a>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="template/img/item-2.jpg"
-                    data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="template/img/item-2.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">3D Bag Mockup</h6><span class="content-more">More Info</span>
-                      </div>
+                    <div class="modal-body">
+                        <div class="row">
+                          <div class="d-flex col-12">
+                            <div class="col-6">
+                              <img src="./template/img/item-1.jpg" alt="" class="contentproject">
+                            </div>
+                            <div class="col-6">
+                              <p>
+                                Plateforme de streaming développée avec Symfony, où les passionnés d'animation trouveront leur bonheur ! <br> <br>
+                                Notre site se distingue par son vaste catalogue, mettant en vedette une sélection diversifiée d'anime, et ce, exclusivement en version française. <br>
+                                Que vous soyez un fan inconditionnel d'animé ou un novice curieux à la recherche de nouvelles découvertes, notre site est conçu pour répondre à toutes vos envies. <br>
+ 
+                                La particularité de notre plateforme réside dans son engagement à fournir une expérience de visionnage entièrement en version française. 
+                                Nous nous efforçons de satisfaire les attentes des francophones en proposant un doublage de qualité, offrant ainsi une immersion totale dans l'univers captivant de l'anime. <br><br>
+
+                                Que vous soyez un amateur de shōnen, shōjo, seinen ou toute autre catégorie, vous trouverez ici une multitude de titres pour tous les goûts et toutes les humeurs. <br>
+                                De plus, notre équipe dévouée s'engage à maintenir un catalogue constamment mis à jour, vous assurant ainsi un accès instantané aux dernières nouveautés de l'animation japonaise. <br><br>
+
+                                Rejoignez-nous dès maintenant pour une expérience de streaming anime en français sans pareille.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design"><a class="portfolio-item" href="template/img/item-3.jpg"
-                    data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="template/img/item-3.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Modern Bag Design</h6><span class="content-more">More Info</span>
-                      </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                      <button type="button" class="btn btn-primary">Accéder au site</button>
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="template/img/item-4.jpg"
-                    data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="template/img/item-4.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Coffee Cup Design</h6><span class="content-more">More Info</span>
-                      </div>
-                    </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="template/img/item-5.jpg"
-                    data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="template/img/item-5.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">T-Shirt Design</h6><span class="content-more">More Info</span>
-                      </div>
-                    </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="template/img/item-6.jpg"
-                    data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="template/img/item-6.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Packaging Box Mockup</h6><span class="content-more">More Info</span>
-                      </div>
-                    </div>
-                  </a></div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 design">
+                  <img src="template/img/item-2.jpg" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 brand">
+                  <img src="template/img/item-3.jpg" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 photos">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 spray">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 photos">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 spray">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 photos">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 photos">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 brand">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 spray">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
+  
+              <div class="single-item col-6 col-lg-4 design">
+                  <img src="http://fakeimg.pl/365x365/" class="img-fluid">
+              </div>
               </div>
             </div>
           </div>
@@ -1029,6 +1066,11 @@
   <!-- removeIf(customizerDist)-->
   <script src="../customizer/main.js"></script>
   <!-- endremoveIf(customizerDist)-->
+
+  <!-- Modal -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Début de widget de badge Calendly -->
   <!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
