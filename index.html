@@ -35,7 +35,7 @@
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="template/css/custom.css">
   <!-- removeIf(customizerDist)-->
-  <link rel="stylesheet" href="../customizer/main.css">
+  <link rel="stylesheet" href="/../customizer/main.css">
   <!-- endremoveIf(customizerDist)-->
 </head>
 
@@ -67,8 +67,7 @@
     </div>
   </nav>
   <!-- Home-->
-  <section class="home-area element-cover-bg video-variant" id="home"
-    style="background-image:url(template/img/home.jpg)">
+  <section class="home-area element-cover-bg video-variant" id="home" style="background-image:url(template/img/home.jpg)">
     <div class="player" id="homeVideo"
       data-property="{videoURL:'https://youtu.be/NNcD-hkBWMM',containment:'#home',autoPlay:true, mute:true, showControls:false, stopMovieOnBlur:false, showYTLogo: false}">
       <!--https://youtu.be/KR97TgpMyrc-->
@@ -639,25 +638,26 @@
               <div class="portfolio-grid row">
                 <!-- Single item-->
                 <div class="single-item col-6 col-lg-4 brand">
-                  <a href="#modal1" data-toggle="modal" data-target="#exampleModal">
+                  <a href="#modal1" data-toggle="modal" data-target="#projectModal1">
                     <img src="template/img/item-1.jpg" class="img-fluid">
                   </a>
                 </div>
 
                 <!-- Modal -->
-                <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+                <div class="modal fade bd-example-modal-lg" id="projectModal1" tabindex="-1" role="dialog"
                   aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
+                        <h5 class="modal-title">JStream</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
                         <div class="row">
-                          <div class="d-flex col-12">
-                            <div class="col-6 container-img-project">
+                          <div class="d-lg-flex flex-lg-row d-sm-flex flex-sm-column col-lg-12">
+                            <div class="col-lg-6 container-img-project">
                               <img
                                 srcset="https://snapcode.jeremiecode.fr/public/assets/images/portfolio/screencapture-preview-cruip-fintech.png 500w, 
                               https://snapcode.jeremiecode.fr/public/assets/images/portfolio/screencapture-preview-cruip-fintech.png 800w, 
@@ -668,7 +668,7 @@
                                 src="https://snapcode.jeremiecode.fr/public/assets/images/portfolio/screencapture-preview-cruip-fintech.png"
                                 alt="Medisoluce - site vitrine" class="contentproject">
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6">
                               <p>
                                 Plateforme de streaming développée avec Symfony, où les passionnés d'animation
                                 trouveront leur bonheur ! <br> <br>
@@ -705,23 +705,83 @@
                 </div>
 
                 <div class="single-item col-6 col-lg-4 design">
+                  <a href="#modal2" data-toggle="modal" data-target="#projectModal2">
                   <img src="template/img/item-2.jpg" class="img-fluid">
+                  </a>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade bd-example-modal-lg" id="projectModal2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Voyageur+</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="d-lg-flex flex-lg-row d-sm-flex flex-sm-column col-lg-12">
+                          <div class="col-lg-6 container-img-project">
+                            <img
+                              srcset="./template/img/portfolio/voyageur_plus.png 500w, 
+                            ./template/img/portfolio/voyageur_plus.png 800w, 
+                            ./template/img/portfolio/voyageur_plus.png 1080w, 
+                            ./template/img/portfolio/voyageur_plus.png 1426w"
+                              loading="eager"
+                              sizes="(max-width: 479px) 84vw, (max-width: 767px) 91vw, (max-width: 991px) 93vw, (max-width: 1439px) 31vw, 32vw"
+                              src="./template/img/portfolio/voyageur_plus.png"
+                              alt="Medisoluce - site vitrine" class="contentproject">
+                          </div>
+                          <div class="col-lg-6">
+                            <p>
+                              Plateforme de planification de voyages nouvelle génération, propulsée par l'intelligence artificielle.
+                              Découvrez notre outil permettant d'optimiser votre expérience de voyage. <br>
+                              Dites adieu aux heures passées à chercher les meilleures activités à faire lors de votre séjour, car nous nous sommes occupés de tout pour vous ! <br> <br>
+
+                              Notre application simplifie, organise et personnalise chaque aspect de votre aventure. 
+                              Elle devient votre compagnon de voyage, votre guide personnel, et votre accès à un monde de découvertes. <br>
+                              Dites-nous où vous rêvez d'aller, définissez vos préférences et laissez la magie opérer.  <br>
+
+                              Notre plateforme intelligente vous guidera vers des destinations de rêve, des activités inoubliables et des aventures adaptées à votre style de voyage.
+                              La promesse que nous vous faisons, c'est que votre voyage ne sera plus jamais le même. 
+                              <!-- Vous profiterez d'une planification sans stress, de recommandations pertinentes et d'une expérience de voyage inégalée. -->
+                              <br><br>
+
+                              Que vous voyagiez en solo, en couple, en famille ou entre amis, que vous soyez un explorateur chevronné ou un novice curieux, notre application est conçue pour vous. 
+                              Elle vous offre la liberté de voyager en toute confiance, de réaliser vos rêves et de créer des souvenirs inoubliables.<br><br>
+
+                              Rejoignez-nous dans cette aventure et explorez le monde comme jamais auparavant, avec Voyageur+. 
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                      <button type="button" class="btn btn-success">Accéder au site</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
 
                 <div class="single-item col-6 col-lg-4 brand">
                   <img src="template/img/item-3.jpg" class="img-fluid">
                 </div>
 
-                <div class="single-item col-6 col-lg-4 brand">
+                <div class="single-item col-6 col-lg-4 mt-lg-4 mt-sm-0 brand">
                   <img src="template/img/item-4.jpg" class="img-fluid">
                 </div>
 
 
-                <div class="single-item col-6 col-lg-4 brand">
+                <div class="single-item col-6 col-lg-4 mt-lg-4 mt-sm-0 brand">
                   <img src="template/img/item-5.jpg" class="img-fluid">
                 </div>
 
-                <div class="single-item col-6 col-lg-4 brand">
+                <div class="single-item col-6 col-lg-4 mt-lg-4 mt-sm-0 brand">
                   <img src="template/img/item-6.jpg" class="img-fluid">
                 </div>
               </div>
