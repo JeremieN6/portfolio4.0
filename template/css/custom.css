@@ -48,3 +48,7 @@
   height: 419px;
   object-fit: cover; 
 }
+
+.img-pos-lft{
+  object-position: left;
+}
