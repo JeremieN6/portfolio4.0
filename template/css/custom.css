@@ -1,54 +1,53 @@
 /*!
-  * Item: Kitzu
+  * Item: SnapCode Agency Theme
   * Description: Personal Portfolio Template
-  * Author/Developer: Exill
-  * Author/Developer URL: https://themeforest.net/user/exill
-  * Version: v2.0.0
-  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
+  * Author/Developer: Jérémie MAOLE
+  * Author/Developer URL: https://jeremiecode.fr
+  * Version: v1.0.0
   */
 
-.contentproject{
-  width: 100%;
-}
-
-.container-img-project {
-  height: 60em;
-  border: 1px solid rgba(0, 0, 0, .25);
-  border-radius: 0.75rem;
-  flex: none;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 8px 2rem rgba(0, 0, 0, .05);
-  cursor: pointer;
-}
-
-.contentproject{
-  width: 100%;
-  display: inline-block;
-  align-self: flex-start;
-  transition: 17000ms linear;
-  object-fit: cover;
-  object-position: top;
-}
-
-.contentproject:hover {
-  filter: brightness(95%);
-  transform: translate3d(0px, -68%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-}
-
-.modal-title{
-  color: #000;
-}
-
-.img-personal-project{
-  height: 419px;
-  object-fit: cover; 
-}
-
-.img-pos-lft{
-  object-position: left;
-}
+  .contentproject{
+    width: 100%;
+  }
+  
+  .container-img-project {
+    height: 60em;
+    border: 1px solid rgba(0, 0, 0, .25);
+    border-radius: 0.75rem;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 2rem rgba(0, 0, 0, .05);
+    cursor: pointer;
+  }
+  
+  .contentproject{
+    width: 100%;
+    display: inline-block;
+    align-self: flex-start;
+    transition: 17000ms linear;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  .contentproject:hover {
+    filter: brightness(95%);
+    transform: translate3d(0px, -68%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+  
+  .modal-title{
+    color: #000;
+  }
+  
+  .img-personal-project{
+    height: 419px;
+    object-fit: cover; 
+  }
+  
+  .img-pos-lft{
+    object-position: left;
+  }
