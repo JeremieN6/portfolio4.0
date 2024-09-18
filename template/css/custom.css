@@ -6,6 +6,7 @@
   * Version: v1.0.0
   */
 
+<<<<<<< HEAD
   .contentproject{
     width: 100%;
   }
@@ -51,3 +52,8 @@
   .img-pos-lft{
     object-position: left;
   }
+=======
+.contentproject{
+  width: 100%;
+}
+>>>>>>> 94f3d0f1cd29103c6760d9cbb7c795d1b5efa675
