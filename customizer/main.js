@@ -120,26 +120,47 @@
                     n = 660,
                     o = 1500;
 
-                function s(e) {
-                    var t = function(e) {
-                        return e.is(":last-child") ? e.parent().children().eq(0) : e.next()
-                    }(e);
-                    e.parents(".cd-headline").hasClass("clip") && e.parents(".cd-words-wrapper").animate({
-                        width: "2px"
-                    }, n, (function() {
-                        var i;
-                        i = t, e.removeClass("is-visible").addClass("is-hidden"), i.removeClass("is-hidden").addClass("is-visible"),
-                            function(e, t) {
-                                e.parents(".cd-headline").hasClass("clip") && e.parents(".cd-words-wrapper").animate({
-                                    width: e.width() + 10
-                                }, n, (function() {
-                                    setTimeout((function() {
-                                        s(e)
-                                    }), o)
-                                }))
-                            }(t)
-                    }))
-                }
+                    let isAnimating = false;
+                    let timeoutId;
+                    
+                    function s(e) {
+                        if (isAnimating) return;
+                        isAnimating = true;
+                    
+                        var t = e.next();
+                        if (t.length === 0) {
+                            t = e.siblings().first();
+                        }
+                    
+                        console.log("Largeur initiale:", e.parents(".cd-words-wrapper").width());
+                        console.log("Largeur du texte suivant:", t.width());
+                    
+                        let wrapper = e.parents(".cd-words-wrapper");
+                    
+                        // ✅ Garde uniquement l'effet "clip" et enlève l'opacité
+                        e.removeClass("is-visible").addClass("is-hidden");
+                    
+                        let newWidth = t.width() + 20;
+                        wrapper.css("width", newWidth); // Ajuste la largeur immédiatement
+                    
+                        t.removeClass("is-hidden").addClass("is-visible"); // Affiche le nouveau texte
+                    
+                        console.log("Nouvelle largeur appliquée:", newWidth);
+                    
+                        wrapper.animate(
+                            { width: newWidth }, // ❌ Supprime l'animation d'opacité, garde juste la largeur
+                            660,
+                            function() {
+                                clearTimeout(timeoutId);
+                                timeoutId = setTimeout(function() {
+                                    isAnimating = false;
+                                    s(t);
+                                }, 2500);
+                            }
+                        );
+                    }
+                    
+                    
                 t = e(".cd-headline"), i = a, t.each((function() {
                     var t = e(this);
                     if (t.hasClass("clip")) {
